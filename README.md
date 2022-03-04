@@ -90,7 +90,7 @@ $$
 BMN模型作为本次比赛的baseline，是$2019$年ActivityNet夺冠方案，为视频动作定位问题中proposal的生成提供高效的解决方案。此模型引入边界匹配(Boundary-Matching, BM)机制来评估proposal的置信度，按照proposal开始边界的位置及其长度将所有可能存在的proposal组合成一个二维的BM置信度图，图中每个点的数值代表其所对应的proposal的置信度分数。网络由三个模块组成，Base Module(BM)作为主干网络处理输入的特征序列，TEM模块预测每一个时序位置属于动作开始、动作结束的概率，PEM模块生成BM置信度图。在对BMN适当调参后，全料数据训练并且做完交叉验证在A榜获得了$47$的分数。我们依然沿用BMN网络的三模块结构，并且参照CVPR2020-HACS挑战赛中的时序动作检测任务冠军算法TCANet，对BMN网络做了稍微的修改。具体地，我们在BM模块后增加了局部-全局时序特征编码器(LGTE)和特征注意力模块(SEBlock)。修改后的网络命名为Attention-guided Boundary-Matching Network(ABMN).
 
 <p align="center">
-<img src="https://ai-studio-static-online.cdn.bcebos.com/8f09b5d1c30a4fff9fdb6a94e09f7676c0c7aa9199fc46caaf86ee6c96706d87" width="1000" height="900">
+<img src="https://ai-studio-static-online.cdn.bcebos.com/8f09b5d1c30a4fff9fdb6a94e09f7676c0c7aa9199fc46caaf86ee6c96706d87" width="600" height="500">
 </p>
 
 具体模型设计可参考原论文:
