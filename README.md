@@ -1,5 +1,7 @@
 # 基于飞桨实现乒乓球时序动作定位大赛: B榜第一名方案
 
+https://aistudio.baidu.com/projectdetail/3545680?searchKeyword=%E5%9F%BA%E4%BA%8E%E9%A3%9E%E6%A1%A8%E5%AE%9E%E7%8E%B0%E4%B9%92%E4%B9%93%E7%90%83%E6%97%B6%E5%BA%8F%E5%8A%A8%E4%BD%9C%E5%AE%9A%E4%BD%8D%E5%A4%A7%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%90%8D&searchTab=ALL
+
 # 一、赛题介绍
 时序动作定位(提案生成)是计算机视觉和视频分析领域一个具有的挑战性的任务。本次比赛不同于以往的ActivityNet-TAL，FineAction等视频时序检测动作定位比赛，我们采用了更精细的动作数据集--乒乓球转播画面，该数据集具有动作时间跨度短，分布密集等特点，给传统模型精确定位细粒度动作带来了很大挑战。本次比赛的任务即针对乒乓球转播画面视频面对镜头的运动员定位其挥拍动作(时序动作提案生成)。
 <p align="center">
